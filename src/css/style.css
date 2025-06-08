@@ -37,9 +37,99 @@ html {
 :root {
     --light-color: #F5F5F7;
     --dark-color: #221F20;
+    --container-padding-inline: 13%;
+    --footer-padding-inline: 10%;
 }
 
+.container {
+    padding: 0 var(--container-padding-inline);
+}
 
+.promo {
+    position: relative;
 
+    min-height: 100vh;
+    background: url("../assets/image/hero-rose-bg.jpg") center center / cover no-repeat;
+    padding-top: 75px;
+}
 
+.promo__title {
+    color: var(--light-color);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
 
+.promo__subtitle {
+    margin-top: 124px;
+
+    color: var(--light-color);
+    font-size: 32px;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    padding: 10px 50px;
+
+    width: 160px;
+    min-height: 38px;
+
+    color: var(--light-color);
+    font-size: 16px;
+    font-weight: 100;
+    line-height: normal;
+    text-decoration: none;
+
+    border: 1px solid var(--light-color);
+    background: rgba(217, 217, 217, 0);
+}
+
+.promo__address {
+    margin-top: 100px;
+
+    color: var(--light-color);
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: normal;
+
+    address {
+        font-style: normal;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.keywords {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 360px;
+
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.12) 50%, rgba(255, 255, 255, 0.2) 100%);
+
+    li {
+        color: var(--light-color);
+        list-style-type: none;
+
+        font-size: 10px;
+        font-weight: 100;
+        line-height: normal;
+    }
+}
