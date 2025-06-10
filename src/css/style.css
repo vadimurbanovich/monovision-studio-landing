@@ -133,3 +133,66 @@ html {
         line-height: normal;
     }
 }
+
+.about {
+    padding: 80px 0;
+
+    background-color: var(--light-color);
+}
+
+.about__title {
+    font-size: 12px;
+    font-style: italic;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.about__text {
+    margin-top: 20px;
+
+    width: 1100px;
+
+    font-size: 40px;
+    color: var(--dark-color);
+    font-weight: 400;
+    line-height: normal;
+
+    span {
+        color: #A5A5A5;
+    }
+}
+
+.services {
+    display: flex;
+
+    column-gap: 10px;
+    margin-top: 80px;
+}
+
+.services__items {
+    width: 50%;
+
+    ul {
+        padding: 0;
+        margin-top: 20px;
+
+        list-style-type: none;
+    }
+    li {
+        margin-top: 10px;
+    }
+}
+
+.services__items-subtitle {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark-color);
+}
+
+.services__text {
+    width: 50%;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--dark-color);
+}
