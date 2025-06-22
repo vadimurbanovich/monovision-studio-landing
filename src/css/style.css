@@ -45,6 +45,13 @@ html {
     padding: 0 var(--container-padding-inline);
 }
 
+.title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--dark-color);
+}
+
 .promo {
     position: relative;
 
@@ -135,7 +142,7 @@ html {
 }
 
 .about {
-    padding: 80px 0;
+    padding-top: 80px;
 
     background-color: var(--light-color);
 }
@@ -195,4 +202,27 @@ html {
     font-weight: 400;
     font-size: 20px;
     color: var(--dark-color);
+}
+
+.works {
+    padding-top: 80px;
+    background-color: var(--light-color);
+}
+
+.works__grid {
+    display: grid;
+
+    margin-top: 50px;
+
+    gap: 50px 30px;
+    grid-template: repeat(2, 1fr) 1.5fr / repeat(2, 1fr);
+
+    /*grid-template: repeat(2, 463px) 700px / repeat(2, 1fr);*/
+    img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    }
 }
