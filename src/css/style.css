@@ -356,7 +356,7 @@ html {
     justify-content: space-around;
     align-items: center;
 
-    padding: 88px 0;
+    padding: 88px  var(--footer-padding-inline);
 
     color: var(--light-color);
     font-size: 20px;
